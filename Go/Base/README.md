@@ -39,4 +39,4 @@ Copy the .devcontainer folder into your project's root directory. VS Code may pr
 
 5. Select this folder. Docker should start building the container, and there will be a progress bar to the bottom right of the window
 
-6. Once the container is built, open Test.Go and run the code (press F5, hit "run" right above the "main" method (only applicable if the Go extension is installed), or navigate to Run > Start Debugging)
+6. Once the container is built, open Test.Go and run the test file (press F5 or navigate to Run > Start Debugging)
