@@ -3,24 +3,23 @@
 	"build": {
 		"dockerfile": "Dockerfile",
 		"args": {
-			"VERSION": "11-buster",
-			"INSTALL_MAVEN": "false",
-			"INSTALL_GRADLE": "false",
+			// Full list of tags can be found at https://github.com/docker-library/docs/blob/master/openjdk/README.md#supported-tags-and-respective-dockerfile-links
+			// Tag must include "buster" to build correctly
+			"VERSION": "11-buster", // Example tags: "8-buster"
+			"INSTALL_MAVEN": "false", // Set to "true" if you want Maven
+			"INSTALL_GRADLE": "false", // Set to "true" if you want Gradle
 		}
 	},
 
 	// Set default container-specific settings.json values on container create
 	"settings": { 
 		"terminal.integrated.shell.linux": "/bin/bash",
-		"java.configuration.runtimes": [{
-			"default": true,
-			"name": "JavaSE-11",
-			"path": "/usr/local/openjdk-11"
-		}]
 	},
 	
 	// Add the IDs of extensions you want installed when the container is created
 	"extensions": [
+		// Required
 		"vscjava.vscode-java-pack"
+		// Optional
 	],
 }
