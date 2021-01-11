@@ -1,0 +1,44 @@
+{
+	"name": "Go",
+	"build": {
+		"dockerfile": "Dockerfile",
+		"args": {
+			// Full list of tags can be found at https://github.com/docker-library/docs/tree/master/golang
+			// Tag must include "buster" to build correctly
+			"VERSION": "buster",
+		}
+	},
+
+	// Set default container-specific settings.json values on container create
+	"settings": { 
+		"terminal.integrated.shell.linux": "/bin/bash",
+	},
+	
+	// Add the IDs of extensions you want installed when the container is created
+	"extensions": [
+		// required:
+		"golang.go",
+		"bradymholt.pgformatter",
+		// optional:
+		// "42crunch.vscode-openapi",
+		// "heaths.vscode-guid",
+		// "bungcip.better-toml",
+		// "eamodio.gitlens",
+		// "casualjim.gotemplate",
+		// "yzhang.markdown-all-in-one"
+	],
+	// Uncomment the next line if you want start specific services in your Docker Compose config.
+	// "runServices": [],
+	// Uncomment the next line if you want to keep your containers running after VS Code shuts down.
+	// "shutdownAction": "none",
+	// Uncomment the next line to run commands after the container is created - for example installing git.
+	"postCreateCommand": "go version",
+	// "postCreateCommand": "apt-get update && apt-get install -y git",
+	
+	// Uncomment the next line to run commands after the container is created.
+	// "postCreateCommand": "go version",
+	
+
+	// Comment out the next line to run as root
+	"remoteUser": "vscode"
+}
