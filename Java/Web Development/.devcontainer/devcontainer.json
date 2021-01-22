@@ -1,5 +1,5 @@
 {
-	"name": "Java",
+	"name": "Java",/*
 	"build": {
 		"dockerfile": "Dockerfile",
 		"args": {
@@ -9,7 +9,10 @@
 			// "INSTALL_NODE": "false",
 			// "NODE_VERSION": "lts/*"
 		}
-	},
+	},*/
+	"workspaceFolder": "/home/jange/workspace/",//"/Users/jange/Documents/GitHub/Remote-Development-Environment-Templates/Java/Template_1/hello",
+	"dockerComposeFile": "docker-compose.yml",
+	"service": "app",
 
 	// Set *default* container specific settings.json values on container create.
 	"settings": { 

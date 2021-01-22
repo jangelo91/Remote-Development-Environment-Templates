@@ -1,4 +1,4 @@
-ARG VERSION="latest"
+ARG VERSION="11-buster"
 # ARG HOME=""
 
 

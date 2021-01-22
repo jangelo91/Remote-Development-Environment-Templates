@@ -18,8 +18,20 @@
 	
 	// Add the IDs of extensions you want installed when the container is created
 	"extensions": [
-		// Required
-		"vscjava.vscode-java-pack"
-		// Optional
+		//Required
+		"vscjava.vscode-java-pack",
+		//Optional
+		//"redhat.vscode-server-connector",
+		//"redhat.vscode-community-server-connector",
+		"microprofile-community.vscode-microprofile-pack",
+		"faustinoaq.javac-linter",
+		"georgewfraser.vscode-javac",
+		"dgileadi.java-decompiler",
+		"gabrielbb.vscode-lombok",
+		"ithildir.java-properties",
+		"bazelbuild.vscode-bazel",
+		"ms-vsliveshare.vsliveshare",
+		"ms-vscode.vscode-node-azure-pack",
+		"msazurermtools.azurerm-vscode-tools"
 	],
 }
