@@ -1,8 +1,0 @@
-package main 
-  
-import "fmt"
-  
-func main() { 
-  
-    fmt.Println("Hello World from a Remote Docker Container!") 
-} 

@@ -2,7 +2,7 @@
 
 ## Overview
 
-The Go Base Template is a set of files that allows the user to develop within a fully isolated remote Go environment. This template utilizes [Visual Studio Code’s](<https://code.visualstudio.com/learn>) Remote – Containers [extension](<https://marketplace.visualstudio.com/VSCode>) in addition to [Docker containers](<https://www.docker.com/resources/what-container>). This template is open to anyone, from students who want to learn the Go programming language to development teams looking to streamline their development environment setup. Docker builds the entire environment within minutes, so there is no need to manually install and configure dependencies within the containerized workspace. Simply deploy a container for each user and, when necessary, modify the config files and update all workspaces simultaneously (advanced). Updating the users' development environments is a simple process that involes modifying the dependencies specfied by the config files and rebuilding the container. This folder contains configuration files to instruct Docker on how to build the Docker container and VS Code what to include (e.g. VS Code extensions, settings, arguments, etc.). In addition, there is a test file for demonstration.
+The Go Web Development Template is a set of files that allows the user to develop within a fully isolated remote Go environment. This template utilizes [Visual Studio Code’s](<https://code.visualstudio.com/learn>) Remote – Containers [extension](<https://marketplace.visualstudio.com/VSCode>) in addition to [Docker containers](<https://www.docker.com/resources/what-container>). This template is open to anyone, from students who want to learn the Go programming language to development teams looking to streamline their development environment setup. Docker builds the entire environment within minutes, so there is no need to manually install and configure dependencies within the containerized workspace. Simply deploy a container for each user and, when necessary, modify the config files and update all workspaces simultaneously (advanced). Updating the users' development environments is a simple process that involes modifying the dependencies specfied by the config files and rebuilding the container. This folder contains configuration files to instruct Docker on how to build the Docker container and VS Code what to include (e.g. VS Code extensions, settings, arguments, etc.). In addition, there is a test file for demonstration.
 
 ### Devcontainer Properties
 
@@ -31,7 +31,7 @@ Copy the .devcontainer folder into your project's root directory. VS Code may pr
 
 1. Clone this repository from GitHub
 
-2. Reopen your local copy of this folder (/Go/Base) in VS Code
+2. Reopen your local copy of this folder ("/Go/Web Development") in VS Code
 
 3. Open the [command pallette](<https://code.visualstudio.com/docs/getstarted/userinterface#:~:text=The%20most%20important%20key%20combination,provides%20access%20to%20many%20commands.>) (press F1 or Ctrl+Shift+P)
 

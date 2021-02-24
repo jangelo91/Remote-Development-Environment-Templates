@@ -1,0 +1,24 @@
+version: '3'
+
+services: 
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        VERSION: buster
+    
+    volumes: 
+      - .:/workspace:cached
+
+    command: sleep infinity
+
+  db:
+    image: mongo:latest
+    restart: unless-stopped
+    volumes:
+      - mongodb-data:/data/db
+
+volumes: 
+  mongodb-data:
+

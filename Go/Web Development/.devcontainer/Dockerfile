@@ -2,6 +2,15 @@ ARG VERSION
 
 FROM golang:${VERSION}
 
+# Install MongoDB command line tools
+ARG MONGO_TOOLS_VERSION=4.2
+#RUN sudo npm install -g mongodb
+#RUN curl -sSL "https://www.mongodb.org/static/pgp/server-${MONGO_TOOLS_VERSION}.asc" | (OUT=$(apt-key add - 2>&1) || echo $OUT) \
+#    && echo "deb http://repo.mongodb.org/apt/debian $(lsb_release -cs)/mongodb-org/${MONGO_TOOLS_VERSION} main" | tee /etc/apt/sources.list.d/mongodb-org-${MONGO_TOOLS_VERSION}.list \
+#    && apt-get update && export DEBIAN_FRONTEND=noninteractive \
+#    && apt-get install -y mongodb-org-tools mongodb-org-shell \
+#    && apt-get clean -y && rm -rf /var/lib/apt/lists/*
+
 # This Dockerfile adds a non-root user with sudo access. Use the "remoteUser"
 # property in devcontainer.json to use it. On Linux, the container user's GID/UIDs
 # will be updated to match your local UID/GID (when using the dockerFile property).
@@ -65,8 +74,13 @@ RUN apt-get update \
     && echo $USERNAME ALL=\(root\) NOPASSWD:ALL > /etc/sudoers.d/$USERNAME \
     && chmod 0440 /etc/sudoers.d/$USERNAME \
     #
+    && mkdir /home/${USERNAME}/workspace \
+    && cd /home/${USERNAME} \
+    #
     # Clean up
     && apt-get autoremove -y \
     && apt-get clean -y \
     && rm -rf /var/lib/apt/lists/* /tmp/gotools
+
+    
 
