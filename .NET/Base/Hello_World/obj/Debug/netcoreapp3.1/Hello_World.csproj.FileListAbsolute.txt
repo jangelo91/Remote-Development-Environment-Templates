@@ -1,0 +1,13 @@
+/workspaces/Base/Hello_World/obj/Debug/netcoreapp3.1/Hello_World.csprojAssemblyReference.cache
+/workspaces/Base/Hello_World/obj/Debug/netcoreapp3.1/Hello_World.AssemblyInfoInputs.cache
+/workspaces/Base/Hello_World/obj/Debug/netcoreapp3.1/Hello_World.AssemblyInfo.cs
+/workspaces/Base/Hello_World/obj/Debug/netcoreapp3.1/Hello_World.csproj.CoreCompileInputs.cache
+/workspaces/Base/Hello_World/bin/Debug/netcoreapp3.1/Hello_World
+/workspaces/Base/Hello_World/bin/Debug/netcoreapp3.1/Hello_World.deps.json
+/workspaces/Base/Hello_World/bin/Debug/netcoreapp3.1/Hello_World.runtimeconfig.json
+/workspaces/Base/Hello_World/bin/Debug/netcoreapp3.1/Hello_World.runtimeconfig.dev.json
+/workspaces/Base/Hello_World/bin/Debug/netcoreapp3.1/Hello_World.dll
+/workspaces/Base/Hello_World/bin/Debug/netcoreapp3.1/Hello_World.pdb
+/workspaces/Base/Hello_World/obj/Debug/netcoreapp3.1/Hello_World.dll
+/workspaces/Base/Hello_World/obj/Debug/netcoreapp3.1/Hello_World.pdb
+/workspaces/Base/Hello_World/obj/Debug/netcoreapp3.1/Hello_World.genruntimeconfig.cache

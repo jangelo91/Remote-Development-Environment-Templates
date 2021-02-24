@@ -1,0 +1,4 @@
+/workspaces/Base/Hello_World/obj/Debug/netcoreapp2.1/Hello_World.csprojAssemblyReference.cache
+/workspaces/Base/Hello_World/obj/Debug/netcoreapp2.1/Hello_World.AssemblyInfoInputs.cache
+/workspaces/Base/Hello_World/obj/Debug/netcoreapp2.1/Hello_World.AssemblyInfo.cs
+/workspaces/Base/Hello_World/obj/Debug/netcoreapp2.1/Hello_World.csproj.CoreCompileInputs.cache
