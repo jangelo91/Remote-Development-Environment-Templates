@@ -1,5 +1,3 @@
-# [put name]
-
 # Specifies what version of Java to use
 ARG VERSION
 # Specifies whether to install Maven

@@ -14,20 +14,20 @@ The Dockerfile is a script that Docker uses to build the container. It can be mo
 
 ## Requirements
 
-- [Windows 10 Version 2004 or higher](<https://support.microsoft.com/en-us/windows/get-the-windows-10-october-2020-update-7d20e88c-0568-483a-37bc-c3885390d212>)
-- [Windows Subsystem for Linux (WSL2)](<https://docs.microsoft.com/en-us/windows/wsl/install-win10>)
+- [Windows 10 version 2004 or higher](<https://support.microsoft.com/en-us/windows/get-the-windows-10-october-2020-update-7d20e88c-0568-483a-37bc-c3885390d212>) (requires Windows 10 Education, Pro, or Enterprise)
+- [Windows Subsystem for Linux version 2 (WSL2)](<https://docs.microsoft.com/en-us/windows/wsl/install-win10>)
 - [Visual Studio Code](<https://code.visualstudio.com/>)
-- [Docker Desktop/Engine](<https://www.docker.com/products/docker-desktop>)
+- [Docker Desktop](<https://www.docker.com/products/docker-desktop>)
 - [Visual Studio Code Docker](<https://code.visualstudio.com/docs/containers/overview>)
 - [Visual Studio Code Remote Development](<https://code.visualstudio.com/docs/remote/remote-overview>)
 
-See <https://code.visualstudio.com/docs/remote/containers-tutorial> for a complete guide on how to setup remote containers (recommended for beginners).
+See VS Code's [tutorial page](<https://code.visualstudio.com/docs/remote/containers-tutorial>) for a complete guide on how to setup remote containers (recommended for beginners).
 
-## How to Use the Node.js Template
+## How to Use this Template
 
 Copy the .devcontainer folder into your project's root directory. VS Code may prompt you to reopen the folder in a container. If you are satisfied with the container configuration, select "Reopen in Container."
 
-## Getting Started with Node.js Remote Development Containers
+## Getting Started with Node.js Development
 
 1. Clone this repository from GitHub
 
@@ -37,6 +37,8 @@ Copy the .devcontainer folder into your project's root directory. VS Code may pr
 
 4. Enter "Remote-Containers: Open Folder in Container"
 
-5. Select this folder. Docker should start building the container, and there will be a progress bar to the bottom right of the window
+5. Select the "Base" folder under "Node.js". Docker should start building the container, and there will be a progress bar to the bottom right of the window
 
-6. Once the container is built, open Test.Node.js and run the code (press F5, hit "run" right above the "main" method (only applicable if the Node.js extension is installed), or navigate to Run > Start Debugging)
+6. Once the container is built, open up a terminal session (press Ctrl+Shift+` or navigate to *Terminal* > *New Terminal*) and enter the command *node Hello_World.js*
+
+7. Open your broswer to <http://127.0.0.1:3000/>

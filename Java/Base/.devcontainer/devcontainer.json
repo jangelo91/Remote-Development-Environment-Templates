@@ -21,13 +21,11 @@
 		//Required
 		"vscjava.vscode-java-pack",
 		//Optional
-		//"redhat.vscode-server-connector",
-		//"redhat.vscode-community-server-connector",
-		"microprofile-community.vscode-microprofile-pack",
+		"redhat.vscode-server-connector",
+		"redhat.vscode-community-server-connector",
 		"faustinoaq.javac-linter",
 		"georgewfraser.vscode-javac",
 		"dgileadi.java-decompiler",
-		"gabrielbb.vscode-lombok",
 		"ithildir.java-properties",
 		"bazelbuild.vscode-bazel",
 		"ms-vsliveshare.vsliveshare",
